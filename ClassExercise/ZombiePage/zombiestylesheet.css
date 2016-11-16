@@ -1,0 +1,35 @@
+body{
+	background-color: dimgrey ;
+	color: beige;
+}
+
+img{
+	width: 150px;
+	height: 200px;
+	border: 5px solid green;
+	float: left;
+	display:inline-block;
+	margin: 10px 20px 10px 20px;
+}
+
+div{
+	margin: 10px 20px 10px 20px;
+	font-size: 18px ;
+}
+
+#name{
+	color: limegreen;}
+
+.S1{
+	font-family: "helvetica";
+	font-weight: bold;
+	color: skyblue;
+
+}
+
+#mySelect{
+	background-color: red;
+	font-family: "calibri";
+	font-size: 25px;
+	font-weight: bold;
+}

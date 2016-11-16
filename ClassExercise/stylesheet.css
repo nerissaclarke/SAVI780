@@ -1,0 +1,25 @@
+ .main {
+background-color:red;
+text-align: center;
+}
+
+body {
+    background-color: black;
+}
+
+ .S1 {
+color:white;
+
+}
+
+select {
+   
+display: block;
+margin: 0 auto;
+
+}
+
+img {
+height: 160px;
+width: 160px;
+}
