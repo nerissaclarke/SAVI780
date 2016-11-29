@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<head>
+<title></title>
+	<meta charset="utf-8">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=10">!-->
+    <title>Zombie Profile with jQuery and Leaflet</title>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css"/>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+<body>
+<span><h2 id="name"> Walter</h2></span>
+
+<div id="accordion" style= "display:inline-block">
+	
+	<h3>Glamour Shot</h3>
+	<div><img src="http://www.clipartkid.com/images/688/cute-zombie-boy-clip-art-cute-zombie-boy-vector-images-auto-design-xVDd2h-clipart.jpg"/></div>
+
+	<h2>Find Out More...</h2>
+	<div>
+		<select id="mySelect" onchange="change()">
+		<option selected disabled>Select One</option>
+  		<option value="Baked Potato">Favorite Food</option>
+  		<option value="I can't feel my face when I'm with you">Favorite Song</option>
+  		<option value="Dead Alive">Favorite Movie</option>
+  		<option value="Eating eyeballs">Favorite Hobby</option>
+		</select>
+		<div style="text-align:center">
+			<h1 class="S1" ></h1><h1 class="S1" id="total"></h1>
+		</div>
+	</div>
+
+	<h3> Map </h3>
+	<div id="mapid"></div>
+</div>
+
+
+</div>
+</body>
+
+<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="java.js"></script>
+
+
+
+</html>

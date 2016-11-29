@@ -1,9 +1,30 @@
-var mymap = L.map('mapid').setView([40.78,-73.9654], 12);
+function change(){
+    var x = document.getElementById('mySelect').value;
+    document.getElementById('total').innerHTML = x
+};
+
+//Using jQuery to select and create an accordian
+$(function() {
+    $( "#accordion" ).accordion(
+    	{ heightStyle: "fill"
+    });
+ 
+    $("#accordion-resizer" ).resizable({
+      minHeight: 140,
+      minWidth: 1000,
+      resize: function() {
+        $("#accordion").accordion( "refresh" );
+      }
+    });
+  });
+
+
+var mymap = L.map('mapid').setView([40.748817,-73.985428], 13);
 
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
     //Max Zoom: The max you can zoom in
-    maxZoom: 25,
+    maxZoom: 20,
     id: 'mapbox.satellite',
     accessToken: 'pk.eyJ1IjoibmVyaXNzYWNsYXJrZSIsImEiOiJjaXZtdWppZTgwMDBoMm9xYm5rbDZuN3EzIn0.NPn-rZJU98pnX_lTUD3XPA'
 }).addTo(mymap);
@@ -11,8 +32,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 //mapbox.satellite; mapbox.mapbox-terrain-v2; mapbox.mapbox-streets-v7
 //How to incorporate styles from Mapbox into projects??
 
-var marker = L.marker([40.7829, -73.9654]).addTo(mymap);
-
+var marker = L.marker([40.748817,-73.985428]).addTo(mymap);
 
 //var circle = L.circle([40.65,-73.93], {
 //    color: 'red',
