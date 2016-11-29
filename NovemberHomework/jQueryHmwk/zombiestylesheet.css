@@ -1,0 +1,56 @@
+
+@font-face {
+      font-family: "zombieFont";
+      src: url(Cicle/Cicle_Fina.ttf);
+    }
+@font-face {
+      font-family: "newFont";
+      src: url(spirequalLight-Mac.sit);
+    }
+
+body{
+	background-color: dimgrey ;
+	color: beige;
+}
+
+img{
+	width: 40%;
+	height: 20%;
+	border: 3px solid gray;
+	float: center;
+	margin: 10px 10px 10px 10px;
+}
+
+div{
+	margin: 10px 20px 10px 20px;
+	font-size: 18px ;
+	display:inline-block;
+}
+
+td{
+	border: 10px solid blue;
+	text-align: center;
+}
+
+#name{
+	color: black;
+	font-size: 52px;
+	font-family: "zombieFont";
+	float: left;
+
+}
+
+.S1{
+	font-family: "newFont";
+	font-weight: bold;
+	color: skyblue;
+
+}
+
+#mySelect{
+	color: black;
+	font-family: "newFont";
+	font-size: 25px;
+	font-weight: thin;
+	display:inline-block;
+}

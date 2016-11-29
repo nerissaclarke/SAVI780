@@ -1,0 +1,54 @@
+
+
+
+ .main {
+/* background-color:red; */
+text-align: center;
+font-family: 'Shrikhand', cursive;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+color:white;
+}
+
+ .main2 {
+text-align: center;
+}
+
+body {
+    background-color: black;
+}
+
+ .S1 {
+font-family: 'Shrikhand', cursive;
+color:white;
+
+}
+
+ .S2 {
+font-family: 'Shrikhand', cursive;
+color:red;
+display:none;
+
+}
+
+select {
+   
+display: block;
+margin: 0 auto;
+
+}
+
+img {
+height: 260px;
+width: 260px;
+}
+
+  #toggle {
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+  }
+
+
