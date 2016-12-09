@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leaflet Path Animation</title>
+	<!--add in leaflet in your header, stylesheet and javascript-->
+	<link href="http://cdn.leafletjs.com/leaflet/v1.0.0-beta.2/leaflet.css" rel="stylesheet" type="text/css" />
+	<script src="http://cdn.leafletjs.com/leaflet/v1.0.0-beta.2/leaflet-src.js"></script>
+	<!--This is his library to create the animation path-->
+	<script src="L.Polyline.SnakeAnim.js"></script>
+</head>
+<body>
+	<!--add a place for your map to go!-->
+	<div id="map" style="width: 800px; height: 600px; border: 1px solid #ccc"></div>
+
+<!--Create a button that onclick activates the snake function written below-->
+ <button onclick='snake()'>Animate!</button></p></div>
+
+	<script src="route.js"></script>
+	<script>
+		//Create (lat, long) pairs from your dataset using a for loop
+		for (var i = 0, latlngs = [], len = route.length; i < len; i++) {
+			latlngs.push(new L.LatLng(route[i][0], route[i][1]));
+		}
+		//Draw the line, using his polyline
+		var path = L.polyline(latlngs,{snakingSpeed: 25});
+		//Use leaflet to find the map (access within the js file)
+		var map = L.map('map');
+		//Import in tiles from carto
+		var positron = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
+		}).addTo(map);
+
+//These are all properties of map that are built into leaflet. Boundaries, addLayers, bind popups
+		map.fitBounds(L.latLngBounds(latlngs));
+		map.addLayer(L.marker(latlngs[0]));
+		map.addLayer(L.marker(latlngs[len - 1]));
+		map.addLayer(path);
+		path.bindPopup("Hello world");
+
+		function snake() {
+			path.snakeIn();
+		}
+
+		path.on('snakestart snake snakeend', function(ev){
+			console.log(ev.type);
+		});
+
+
+	</script>
+</body>
+</html>

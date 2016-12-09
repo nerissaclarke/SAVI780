@@ -6,7 +6,7 @@ function change(){
 //Using jQuery to select and create an accordian
 $(function() {
     $( "#accordion" ).accordion(
-    	{ heightStyle: "fill"
+    	{ 
     });
  
     $("#accordion-resizer" ).resizable({

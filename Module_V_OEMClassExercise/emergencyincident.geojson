@@ -1,0 +1,608 @@
+var geojsonFeature ={
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.93366405,40.69604555 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"1000 Broadway",
+    "Borough":"Brooklyn",
+    "time":"5/12/14 15:31",
+    "Closed Date":"5/12/14 18:40"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.90787552,40.59651127 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"Flatbush Ave & Shore Parkway",
+    "Borough":"Brooklyn",
+    "time":"8/21/14 21:53",
+    "Closed Date":"11/2/14 12:31"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.88419897,40.76518368 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"85-01 24th Avenue",
+    "Borough":"queens",
+    "time":"10/24/14 8:23",
+    "Closed Date":"11/2/14 12:36"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.91008561,40.71211777 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"21-15 Amory Court",
+    "Borough":"Queens",
+    "time":"5/13/11 21:05",
+    "Closed Date":"5/13/11 23:33"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.92653575,40.86437699 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"186 Dyckman Street",
+    "Borough":"Manhattan",
+    "time":"5/24/11 13:21",
+    "Closed Date":"5/24/11 16:38"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.98958407,40.703199 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"Washington Street & Water Street",
+    "Borough":"Brooklyn",
+    "time":"6/2/11 8:27",
+    "Closed Date":"6/2/11 10:55"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.82024433,40.72376288 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"75-09 Main St",
+    "Borough":"Queens",
+    "time":"6/3/11 15:58",
+    "Closed Date":"6/4/11 0:50"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.7749345,40.69923006 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"110-10 179 Place",
+    "Borough":"Queens",
+    "time":"7/7/11 10:04",
+    "Closed Date":"7/7/11 21:06"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.91100675,40.89754388 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"640 West 249 Street",
+    "Borough":"Bronx",
+    "time":"7/8/11 11:37",
+    "Closed Date":"7/8/11 13:41"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.90657532,40.87980696 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"West 231st Street & Kingsbridge Ave",
+    "Borough":"Bronx",
+    "time":"7/26/11 20:28",
+    "Closed Date":"7/27/11 6:53"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.96806158,40.7670929 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"53 East 65th Street",
+    "Borough":"Manhattan",
+    "time":"8/10/11 9:45",
+    "Closed Date":"8/10/11 10:26"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.96420986,40.70617746 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"128 Clymer St",
+    "Borough":"Brooklyn",
+    "time":"8/15/11 11:23",
+    "Closed Date":"8/15/11 20:31"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.93770781,40.83674439 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"440 West 164th Street",
+    "Borough":"Manhattan",
+    "time":"10/26/11 11:52",
+    "Closed Date":"10/26/11 12:55"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.23625946,40.52102871 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"231 Richmond Valley Road",
+    "Borough":"Staten Island",
+    "time":"11/1/11 17:12",
+    "Closed Date":"11/1/11 19:28"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.96645717,40.69128503 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"241 Washington Avenue",
+    "Borough":"Brooklyn",
+    "time":"4/6/12 9:36",
+    "Closed Date":"4/6/12 11:37"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.96481103,40.65372503 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"131 Parkside Avenue",
+    "Borough":"Brooklyn",
+    "time":"4/9/12 9:13",
+    "Closed Date":"4/9/12 10:33"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"50 Street & 54 Avenue",
+    "Borough":"Queens",
+    "time":"9/6/12 17:07",
+    "Closed Date":"9/6/12 19:03"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.82615606,40.67726181 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"112-20  Rockaway Blvd",
+    "Borough":"Queens",
+    "time":"9/17/12 11:39",
+    "Closed Date":"9/17/12 13:07"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.96777458,40.75588877 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"976 2nd Avenue",
+    "Borough":"Manhattan",
+    "time":"10/1/12 12:09",
+    "Closed Date":"10/1/12 12:51"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.00662605,40.74628648 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"529 West 20 Street",
+    "Borough":"Manhattan",
+    "time":"11/11/12 14:12",
+    "Closed Date":"11/11/12 15:08"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.96690784,40.70596692 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"570 Wythe Avenue",
+    "Borough":"Brooklyn",
+    "time":"12/4/12 10:35",
+    "Closed Date":"12/5/12 5:12"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.79599263,40.59072654 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"Rockaway Beach Blvd & Beach 67th Street",
+    "Borough":"Queens",
+    "time":"11/20/13 15:32",
+    "Closed Date":"11/20/13 19:27"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.03255894,40.61115688 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"101 Street & Fort Hamilton Parkway",
+    "Borough":"Brooklyn",
+    "time":"12/17/13 14:45",
+    "Closed Date":"12/17/13 17:11"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.82385608,40.83690392 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"1192 Fairfax Avenue",
+    "Borough":"Bronx",
+    "time":"4/14/14 12:28",
+    "Closed Date":"4/14/14 13:27"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.83313669,40.88439012 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"3981  Boston Road",
+    "Borough":"Bronx",
+    "time":"4/16/14 9:57",
+    "Closed Date":"4/16/14 23:14"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"",
+    "Borough":"Brooklyn",
+    "time":"6/16/14 14:41",
+    "Closed Date":"6/19/14 3:15"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"",
+    "Borough":"New York",
+    "time":"8/13/14 13:54",
+    "Closed Date":"8/13/14 16:20"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.80350488,40.58655105 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"7600 Shore Front Parkway",
+    "Borough":"Queens",
+    "time":"10/9/14 9:01",
+    "Closed Date":"10/9/14 14:18"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.76026679,40.59503278 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"27-06 Seagirt Ave",
+    "Borough":"Queens",
+    "time":"2/6/15 13:48",
+    "Closed Date":"2/6/15 15:10"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.98398659,40.68817349 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"Bond St & Schermerhorn st",
+    "Borough":"Brooklyn",
+    "time":"3/9/15 11:51",
+    "Closed Date":"3/9/15 13:09"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.98898826,40.75118277 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"155 West 35 Street",
+    "Borough":"Manhattan",
+    "time":"4/15/15 2:11",
+    "Closed Date":"4/15/15 3:01"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"88-08 164 Street",
+    "Borough":"Queens",
+    "time":"4/24/15 10:39",
+    "Closed Date":"4/24/15 12:25"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.89672531,40.65130432 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"10622 Farragut Road",
+    "Borough":"Brooklyn",
+    "time":"5/22/15 21:07",
+    "Closed Date":"5/22/15 23:11"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.82998933,40.71400364 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"8900 Van Wyck Expressway",
+    "Borough":"queens",
+    "time":"6/1/15 16:12",
+    "Closed Date":"6/1/15 19:26"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.00853712,40.70506285 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"127 Pearl Street",
+    "Borough":"Manhattan",
+    "time":"6/3/15 20:51",
+    "Closed Date":"6/4/15 11:36"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.07397651,40.62611328 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"thompson street & Front Street",
+    "Borough":"Staten Island",
+    "time":"6/18/15 8:20",
+    "Closed Date":"6/18/15 9:47"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.96023181,40.76623959 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"East 68 Street & 2nd Avenue",
+    "Borough":"Manhattan",
+    "time":"9/29/15 19:06",
+    "Closed Date":"10/14/15 20:48"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.97833643,40.68772243 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"250 Ashland Place",
+    "Borough":"Brooklyn",
+    "time":"3/2/16 13:57",
+    "Closed Date":"3/2/16 15:33"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"East 71 Street & York Avenue",
+    "Borough":"Manhattan",
+    "time":"3/30/16 14:38",
+    "Closed Date":"4/2/16 10:54"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.99003979,40.57389492 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"2316 Surf Avenue",
+    "Borough":"Brooklyn",
+    "time":"6/22/16 15:42",
+    "Closed Date":"6/25/16 12:45"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.9592583,40.73476248 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"33 Eagle Street",
+    "Borough":"Brooklyn",
+    "time":"7/22/16 10:28",
+    "Closed Date":"7/22/16 11:29"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.99595413,40.69067228 ]
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"112 Atlantic Avenue",
+    "Borough":"Brooklyn",
+    "time":"8/17/16 8:42",
+    "Closed Date":"8/17/16 10:33"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "Incident Type":"Utility-Gas Main Rupture",
+    "Location":"",
+    "Borough":"Brooklyn",
+    "time":"9/30/16 8:10",
+    "Closed Date":"9/30/16 9:54"
+    }
+  }
+
+]
+};

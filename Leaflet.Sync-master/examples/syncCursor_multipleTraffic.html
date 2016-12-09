@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Leaflet Sync Demo - with three maps listening</title>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v1.0.0-rc.1/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet/v1.0.0-rc.1/leaflet-src.js"></script>
+    
+   <!-- <link rel="stylesheet" href="../libs/leaflet/leaflet.css" />
+    [if lte IE 8]><link rel="stylesheet" href="../libs/leaflet/leaflet.ie.css" /><![endif]
+    <link rel="stylesheet" href="../dist/leaflet.label.css" />
+    <script src="../libs/leaflet/leaflet-src.js"></script>-->
+
+    <style type="text/css">
+        html, body { width: 100%; height: 100%; margin: 0; }
+        #map, #container { width: 49.5%; height: 100%; }
+        #map { float: left; }
+        #container { float: right; }
+        #container .map { width: 100%; height: 50%; }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <div id="container">
+        <div id="mapA" class="map"></div>
+        <div id="mapB" class="map"></div>
+    </div>
+<!--Go back to a folder above and then find this file! This adds in the plug in code
+<script src="leaflet.label.js"></script> 
+    <script src="leaflet.label-src.js"></script>-->
+    <script src="../L.Map.Sync.js"></script>
+
+<!--Labels?-->
+    <script src="../src/Label.js"></script>
+    <script src="../src/BaseMarkerMethods.js"></script>
+    <script src="../src/Marker.Label.js"></script>
+    <script src="../src/CircleMarker.Label.js"></script>
+    <script src="../src/Path.Label.js"></script>
+    <script src="../src/Map.Label.js"></script>
+    <script src="../src/FeatureGroup.Label.js"></script>
+    <script src="../src/Leaflet.label.js"></script>
+
+
+    <!--Add these after the map div and before the text/javascript file! very important or it won't run-->
+    <script src="2016traffic.js"></script>
+    <script src="2015traffic.js"></script>
+    <script src="2014traffic.js"></script>
+
+    <script type="text/javascript">
+        var center = [40.762667, -73.974172];
+
+        var stamenOptions = {
+            attribution:
+                'Map tiles by <a href="http://stamen.com">Stamen Design</a>, ' +
+                '<a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; ' +
+                'Map data OpenStreetmap',
+            subdomains: 'abcd',
+            minZoom: 0,
+            maxZoom: 20
+        };
+        //This is what the map looks like
+        var toner = L.tileLayer('http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.png', stamenOptions);
+        var tonerLite = L.tileLayer('http://{s}.tile.stamen.com/toner-lite/{z}/{x}/{y}.png', stamenOptions);
+        var watercolor = L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg', stamenOptions);
+
+        var map = L.map('map', {
+            layers: [toner],
+            center: center,
+            zoom: 12
+        });
+
+        var mapA = L.map('mapA', {
+            layers: [watercolor],
+            center: center,
+            zoom: 12,
+            zoomControl: true
+        });
+        var mapB = L.map('mapB', {
+            layers: [tonerLite],
+
+            center: center,
+            zoom: 12,
+            zoomControl: false
+        });
+
+ //This doesnt work: map.bindLabel('2015!', { noHide: true })
+ //  .addTo(map);
+//mapB.bindLabel('2014!', { noHide: true })
+//   .addTo(map);
+
+        //Create a way to connect the data to each of the maps (could also do a data bind here)
+        for (var i = 0; i< traffic2016.length; i++){
+            marker = new L.marker([traffic2016[i][0],traffic2016[i][1]])
+            .addTo(map);
+            //could also do .bindPopup[i][column number within the bigger file that you want to popup]
+        }
+
+        for (var i = 0; i< traffic2015.length; i++){
+            marker = new L.marker([traffic2015[i][0],traffic2015[i][1]])
+            .addTo(mapA);  
+
+        //    mapA.bindLabel('My label', {
+        //        noHide: true,
+        //        direction: 'auto'
+        //    }).addTo(mapA);
+        }
+
+        for (var i = 0; i< traffic2014.length; i++){
+            marker = new L.marker([traffic2014[i][0],traffic2014[i][1]])
+            .addTo(mapB);
+
+            //this doesn't work either : l/abel = new L.Tooltip
+
+            marker
+            .bindPopup('2014 Traffic Complaint')
+            .addTo(mapB)
+            //.on('click', function () {
+             //   map.setLabelNoHide(noHide);
+             //   noHide = !noHide;  })
+        
+    };
+
+// define rectangle geographical bounds
+    var bounds = [[40.79, -73.95], [40.76, -73.97]];
+
+    // add rectangle passing bounds and some basic styles
+    L.rectangle(bounds, {color: "red", opacity: "90%", weight: 10}).addTo(map);
+
+
+    var circle = L.circleMarker([-37.7612, 175.2856], { fillColor: "#f00", radius: 8 } ).bindLabel("Hello World", { direction: 'left' }).addTo(map);
+
+        //To Sync the cursors, use this tool! only 6 lines of code
+        map.sync(mapA, {syncCursor: true});
+        map.sync(mapB, {syncCursor: true});
+
+        // If you want interaction with mapA|B to be synchronized on map,
+        // add other links as well.
+        mapA.sync(map, {syncCursor: true});
+        mapA.sync(mapB, {syncCursor: true});
+
+        mapB.sync(map, {syncCursor: true});
+        mapB.sync(mapA, {syncCursor: true});
+    </script>
+</body>
+</html>
